@@ -2,4 +2,4 @@
 #### If I execute the file `add_method.cs`, the terminal will display.  
 #### And then following the instruction. 
 #### It will respond you~ Like this↓
-![ex2.jpg]([https://github.com/sleepingjun/addarray_method/blob/master/ex.JPG](https://github.com/sleepingjun/addarray_method/blob/master/ex2.JPG))
+![ex2.jpg](https://github.com/sleepingjun/addarray_method/blob/master/ex2.JPG)
