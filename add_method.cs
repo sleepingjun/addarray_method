@@ -1,4 +1,5 @@
-﻿// known array
+﻿//1-dim array 
+// known array
 int[] scores = { 100, 98, 85, 72, 49 }; //創建一個陣列，數值已知。 注意已知的陣列用大括號{}
 //如果打錯數字，不回頭改的方法: scores[4] = 59; 把五號同學的分數從死當變成活當，可以先修下學期，明年跟學弟妹擠一擠:>
 for (int i = 0; i < scores.Length; i++ ) //能用loop就用，解放手指，延長換鍵盤軸體的週期~
@@ -23,3 +24,27 @@ for (int i = 0; i < phone.Length; i++)
         System.Console.WriteLine($"Number {i + 1}'s Phone number is: {phone[i]}");
     }
 }
+
+//2-dim array [row, column]
+//[,,] 3dim [,,,] 4dim ...以此類推
+
+int[,] matrix = {
+    { 1, 2, 3, 4 }, 
+    { 5, 6, 7, 8 }, 
+    { 9, 10, 11, 12 } 
+};
+System.Console.WriteLine($"matrix[1,2] is: {matrix[1,2]}"); 
+
+int[,] m2 = new int[3, 4]; // row 3, col 4
+m2[0, 0] = 1;
+m2[0, 1] = 2;
+
+System.Console.WriteLine("2-dim array m2 is: ");
+for (int r = 0; r < m2.GetLength(0); r++) //GetLength(0) = row數
+{
+    for (int c = 0; c < m2.GetLength(1); c++) //GetLength(1)= col數
+    {
+        System.Console.Write($"{m2[r,c]} \t"); //\t tab
+    }
+    System.Console.WriteLine();
+}   
