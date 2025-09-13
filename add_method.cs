@@ -48,3 +48,25 @@ for (int r = 0; r < m2.GetLength(0); r++) //GetLength(0) = row數
     }
     System.Console.WriteLine();
 }   
+
+int[,,] cube = new int[3, 4, 2]; //3dim array
+cube[0, 0, 0] = 1;
+cube[0, 2, 1] = 2;
+cube[1, 0, 0] = 3;
+cube[1, 0, 1] = 4;
+cube[2, 3, 0] = 5; 
+cube[2, 0, 1] = 6;
+
+System.Console.WriteLine($"3-dim array cube is:");
+for (int r = 0; r < cube.GetLength(0); r++) //GetLength(0) = row數
+{
+    for (int c = 0; c < cube.GetLength(1); c++) //GetLength(1)= col數
+    {
+        for (int d = 0; d < cube.GetLength(2); d++) //GetLength(2)= depth數
+        {
+            System.Console.Write($"{cube[r, c, d]} \t"); //\t tab
+        }
+        System.Console.WriteLine();
+    }
+    System.Console.WriteLine();
+}
